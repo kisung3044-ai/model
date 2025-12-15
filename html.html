@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D 크리에이터 포트폴리오 갤러리</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script async src="https://unpkg.com/three@0.137.0/build/three.min.js"></script>
+    <script async src="https://unpkg.com/three@0.137.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script async src="https://unpkg.com/three@0.137.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+
+    <div id="viewer-container">
+        </div>
+
+    <div id="ui-overlay">
+        
+        <aside id="model-list">
+            <h2>✨ 갤러리 컬렉션</h2>
+            <ul id="model-menu">
+                <li data-model="models/model1.glb" data-name="우주 정거장 컨셉">모델 #1: 스테이션</li>
+                <li data-model="models/model2.glb" data-name="고대 유물 조각">모델 #2: 아티팩트</li>
+                <li data-model="models/model3.glb" data-name="미래형 드론">모델 #3: 드론 프로토타입</li>
+            </ul>
+        </aside>
+
+        <div id="model-info">
+            <h3>선택된 모델 정보</h3>
+            <p id="current-model-name">목록에서 모델을 선택해 주세요.</p>
+            <button id="buy-button">구매/다운로드 문의</button>
+        </div>
+        
+        <header id="main-header">
+            <h1>[YOUR CREATOR NAME]</h1>
+            <nav>
+                <a href="#">소개</a>
+                <a href="#">문의</a>
+            </nav>
+        </header>
+
+    </div> <script src="script.js"></script>
+</body>
+</html>
